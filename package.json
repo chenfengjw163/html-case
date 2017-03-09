@@ -1,0 +1,21 @@
+{
+  "name": "html-case",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenfengjw163/html-case.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chenfengjw163/html-case/issues"
+  },
+  "homepage": "https://github.com/chenfengjw163/html-case#readme"
+}
