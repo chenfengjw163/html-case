@@ -14,13 +14,16 @@ module.exports = {
     },
     devServer: {
         historyApiFallback: true,
-        hot: true,
+        hot: false,
         inline: true,
         grogress: true
     },
     module: {
-		loaders: [
-			{ test: /\.scss$/, loader: extractCSS.extract(['css','sass']) },
+        rules: [
+            {
+                test: /\.scss$/i,
+                use: extractCSS.extract([ 'css-loader', 'sass-loader' ])
+            },
         ]
     },
     plugins: [
@@ -28,6 +31,6 @@ module.exports = {
     ],
     resolve: {
 		// require时省略的扩展名，如：require('module') 不需要module.js
-        extensions: ['', '.js', '.css', '.scss'], 
+        extensions: ['.js', '.css', '.scss'], 
 	},
 }
