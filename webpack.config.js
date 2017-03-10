@@ -5,7 +5,7 @@ let extractCSS = new ExtractTextPlugin('/css/[name].css');
 
 module.exports = {
     entry: {
-        demo1: './js/demo1',
+        demo1: './js/home',
         demo2: './js/demo2'
     },
     output: {
@@ -22,8 +22,12 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/i,
-                use: extractCSS.extract([ 'css-loader', 'sass-loader' ])
+                use: extractCSS.extract([ 'css-loader', 'sass-loader', 'autoprefixer-loader?{browsers:["last 2 version", "> 1%"]}' ])
             },
+            { 
+                test: /\.(png|jpg|gif)$/, 
+                loader: 'url-loader?limit=1024,name=/img/[name].[ext]' 
+            }, 
         ]
     },
     plugins: [

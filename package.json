@@ -1,10 +1,14 @@
 {
   "name": "html-case",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "file-loader": "^0.10.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/chenfengjw163/html-case/issues"
   },
-  "homepage": "https://github.com/chenfengjw163/html-case#readme"
+  "homepage": "https://github.com/chenfengjw163/html-case#readme",
+  "description": ""
 }
