@@ -1,15 +1,12 @@
 {
   "name": "html-case",
   "version": "1.0.0",
-  "description": "2000",
   "main": "webpack.config.js",
   "dependencies": {},
   "devDependencies": {
-    "css-loader": "^0.26.4",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.3",
-    "scss-loader": "0.0.1",
+    "autoprefixer-loader": "^3.2.0",
+    "file-loader": "^0.10.1",
+    "url-loader": "^0.5.8",
     "webpack": "^2.2.1"
   },
   "scripts": {
@@ -27,5 +24,6 @@
   "homepage": "https://github.com/chenfengjw163/html-case#readme",
   "keywords": [
     "2000"
-  ]
+  ],
+  "description":""
 }
